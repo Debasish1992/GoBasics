@@ -105,4 +105,6 @@ func manipultingSlices() {
 	fmt.Print(myDemoSlice3)
 	fmt.Print(myDemoSlice4)
 
+	fmt.Print(myDemoSlice4)
+
 }
