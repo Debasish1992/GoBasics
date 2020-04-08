@@ -29,7 +29,8 @@ func main() {
 	// }
 
 	//playingWithSlices()
-	manipultingSlices()
+	//manipultingSlices()
+	creatingSlicesUsingMake()
 }
 
 func playingWithArray() bool {
@@ -106,5 +107,28 @@ func manipultingSlices() {
 	fmt.Print(myDemoSlice4)
 
 	fmt.Print(myDemoSlice4)
+}
 
+func creatingSlicesUsingMake() {
+	// This will create a slice with length 10 and capacity 100
+	a := make([]int, 10, 100)
+	fmt.Println(a)
+	fmt.Printf("The Array size is %v\n", len(a))
+	fmt.Printf("The capacity size is %v\n", cap(a))
+
+	mergingTwoSlices()
+}
+
+func mergingTwoSlices() {
+	// Blank Slice
+	a := []int{}
+	// Appending the Element to the Slice
+	a = append(a, 2)
+	// Printing the elements
+	fmt.Print(a)
+
+	// Appening another slice with the prvious slice with the ... operators
+	a = append(a, []int{10, 50, 38, 80}...)
+
+	fmt.Print(a)
 }
