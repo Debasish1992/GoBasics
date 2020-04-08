@@ -21,27 +21,27 @@ const (
 	a2 = iota
 )
 
-func main() {
-	var actorAddress string = "San Jose, CA"
-	actorAddress = "Berlin, Germany"
-	fmt.Println("Where is Procs", actorAddress)
+// func main() {
+// 	var actorAddress string = "San Jose, CA"
+// 	actorAddress = "Berlin, Germany"
+// 	fmt.Println("Where is Procs", actorAddress)
 
-	n := 1 == 1
-	m := 1 == 2
-	fmt.Printf("%v,  %T\n", n, n)
-	fmt.Printf("%v,  %T\n", m, m)
+// 	n := 1 == 1
+// 	m := 1 == 2
+// 	fmt.Printf("%v,  %T\n", n, n)
+// 	fmt.Printf("%v,  %T\n", m, m)
 
-	var a int = 10
-	var b int8 = 3
-	fmt.Println(a + int(b))
+// 	var a int = 10
+// 	var b int8 = 3
+// 	fmt.Println(a + int(b))
 
-	calculateWithBinaries()
+// 	calculateWithBinaries()
 
-	dealingWithConstants()
+// 	dealingWithConstants()
 
-	getIotaValues()
+// 	getIotaValues()
 
-}
+// }
 
 func calculateWithBinaries() {
 	a := 10             // 1010

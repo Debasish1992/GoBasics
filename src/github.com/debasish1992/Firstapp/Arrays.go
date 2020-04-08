@@ -2,36 +2,36 @@ package main
 
 import "fmt"
 
-func main() {
-	// fmt.Println("Learning Arrays")
+// func main() {
+// 	// fmt.Println("Learning Arrays")
 
-	// // Declaration of an array
-	// grades := [3]int{97, 53, 35}
+// 	// // Declaration of an array
+// 	// grades := [3]int{97, 53, 35}
 
-	// var students [10]string
+// 	// var students [10]string
 
-	// gradesNew := [...]int{97, 53, 35}
-	// fmt.Printf("Grades: %v", grades)
-	// fmt.Printf("Grades: %v", gradesNew)
+// 	// gradesNew := [...]int{97, 53, 35}
+// 	// fmt.Printf("Grades: %v", grades)
+// 	// fmt.Printf("Grades: %v", gradesNew)
 
-	// students[0] = "Lisa"
-	// students[1] = "tensa"
+// 	// students[0] = "Lisa"
+// 	// students[1] = "tensa"
 
-	// fmt.Printf("\n Students %v\n", students)
-	// fmt.Printf("\n Students Array Length %v\n", len(students))
+// 	// fmt.Printf("\n Students %v\n", students)
+// 	// fmt.Printf("\n Students Array Length %v\n", len(students))
 
-	//var verifyIdentity bool = playingWithArray()
+// 	//var verifyIdentity bool = playingWithArray()
 
-	// if verifyIdentity {
-	// 	fmt.Println("Identity Matched")
-	// } else {
-	// 	fmt.Println("Identity did not Matched")
-	// }
+// 	// if verifyIdentity {
+// 	// 	fmt.Println("Identity Matched")
+// 	// } else {
+// 	// 	fmt.Println("Identity did not Matched")
+// 	// }
 
-	//playingWithSlices()
-	//manipultingSlices()
-	creatingSlicesUsingMake()
-}
+// 	//playingWithSlices()
+// 	//manipultingSlices()
+// 	creatingSlicesUsingMake()
+// }
 
 func playingWithArray() bool {
 	var isSelectionMatched bool
@@ -131,4 +131,26 @@ func mergingTwoSlices() {
 	a = append(a, []int{10, 50, 38, 80}...)
 
 	fmt.Print(a)
+
+	pushingAndPopingelementsFromSlice()
+}
+
+func pushingAndPopingelementsFromSlice() {
+	a := []int{10, 30, 40}
+	fmt.Print("The Original Array is %v\n ", a)
+	a = append(a, 90)
+	fmt.Print("The Appended Array is %v\n ", a)
+	// This will pop the first element from the slice
+	b := a[1:]
+	fmt.Printf("The Poped Array is %v\n ", b)
+	// This will pop the last element from the slice
+	c := a[:len(a)-1]
+	fmt.Printf("The Poped new Array is %v\n ", c)
+
+	//Removing the elemnet from the middle [1, 2, 3, 4, 5]
+	z := append(a[:2], a[3:]...)
+	fmt.Printf("The Value afer removal is %v\n", z)
+
+	fmt.Print("The Original Array is %v\n ", a)
+
 }
