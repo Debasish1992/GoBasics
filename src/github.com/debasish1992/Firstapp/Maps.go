@@ -36,4 +36,22 @@ func mapsManipulations() {
 
 	fmt.Println("Map After Delete ", populationMap)
 
+	// This ok can be used to check for the element availability in the Map
+	// It returns 0, false
+	pop, ok := populationMap["Mic"]
+
+	// It returns 2187212, true
+	pop2, ok := populationMap["Michigan"]
+
+	fmt.Println(pop, ok)
+
+	fmt.Println(pop2, ok)
+
+	fmt.Println("The Array Size is ", len(populationMap))
+
+	sp := populationMap
+
+	delete(sp, "LA")
+
+	fmt.Println(populationMap)
 }
